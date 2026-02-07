@@ -1,0 +1,6 @@
+{{ $url := .Get "url" }}
+{{ with resources.GetRemote $url }}
+  {{ .Content | markdownify }}
+{{ else }}
+  <p>Failed to load README from remote.</p>
+{{ end }}
