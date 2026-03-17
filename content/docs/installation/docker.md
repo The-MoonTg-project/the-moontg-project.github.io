@@ -16,11 +16,7 @@ You can either use `docker run` or `docker compose`.
 We also push images to Docker Hub, so you can use the following commands:
 
 ```shell
-# Normal image
 docker run --env-file ./.env -d qbtaumai/moonuserbot:latest
-
-# Image with web (for heroku/koyeb/render)
-docker run --env-file ./.env -d qbtaumai/moonubcloud:latest-cloud
 ```
 
 **Updating:**
